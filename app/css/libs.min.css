@@ -4213,7 +4213,6 @@ body input:required:valid, body textarea:required:valid {
   color: #333b46;
   text-transform: uppercase;
   font-family: "SourceSansProLight", sans-serif;
-  text-align: left;
   font-weight: 300;
   margin-bottom: 45px;
 }
@@ -4256,6 +4255,129 @@ body input:required:valid, body textarea:required:valid {
   border: 1px solid #333b46;
   -webkit-border-radius: 20px;
           border-radius: 20px;
+}
+
+.block_detals {
+  padding: 75px 0 90px;
+  background-color: #f3f3f3;
+  text-align: center;
+}
+
+.tabs-container {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tabs-cont {
+  display: inline-block;
+}
+
+.tabs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0 auto 42px;
+}
+
+.tabs li:not(:last-child) {
+  margin-right: 7px;
+}
+
+.tabs li a {
+  display: block;
+  position: relative;
+  top: 0;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  color: #fff;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background: #81868e;
+  -webkit-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.tabs li.active a,
+.tabs li a:hover {
+  opacity: 1;
+  background: #19bd9a;
+  top: 0;
+}
+
+.tabs-content {
+  position: relative;
+  z-index: 2;
+  padding: 25px;
+}
+
+.tabs-panel {
+  display: none;
+  text-align: left;
+}
+
+.tabs-panel_cont {
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 110px;
+     -moz-column-gap: 110px;
+          column-gap: 110px;
+}
+
+.tabs-panel_cont p a {
+  color: #19bd9a;
+}
+
+.tabs-panel.active {
+  display: block;
+}
+
+.tabs-panel p + div {
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .tabs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tabs li {
+    width: 100%;
+  }
+  .tabs li:not(:last-child) {
+    margin-right: 0;
+  }
+  .tabs li a {
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    opacity: 1;
+    top: 0;
+  }
+  .tabs li.active a::before {
+    content: "•";
+    padding-right: 5px;
+  }
+  .tabs-content {
+    -webkit-border-radius: 0;
+            border-radius: 0;
+  }
+}
+
+.tab_title {
+  color: #464646;
+  line-height: 6.25;
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  text-transform: capitalize;
 }
 
 .heagerclass {
