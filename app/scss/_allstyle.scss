@@ -1,0 +1,48 @@
+.block {
+	padding: 50px 0;
+}
+
+.block_phone {
+	padding: 80px 0 70px 0;
+}
+
+.block_title {
+	font-size: 20px;
+	line-height: 0.6;
+	color: rgb(51, 59, 70);
+	text-transform: uppercase;
+	font-family: "SourceSansProLight", sans-serif;
+	text-align: left;
+	font-weight: 300;
+	margin-bottom: 45px;
+}
+.block_phone_wrap {
+display: flex;
+justify-content: space-between;
+padding: 0 100px;
+}
+.phone_wrap_item {
+	width: 55%;
+	padding-right: 150px;
+}
+.phone_wrap_item:nth-child(2) {
+width: 100 - 55%;
+padding-right: 0;
+}
+
+
+.block_content {
+@include fontsize-lineheight(25, 14);
+letter-spacing: 0.7px;
+margin-bottom: 35px;
+}
+
+.block_link {
+display: inline-block;
+@include lineheight(12, 16);
+color:$botom_color;
+text-decoration: none;
+padding: 11px 28px;
+border:1px solid $botom_color;
+border-radius: 20px;
+}
