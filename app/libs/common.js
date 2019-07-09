@@ -179,7 +179,26 @@ slidesToShow:1,
 
 
 
+    $('#adwice_slider').slick({
+  dots: true,
+  arrows:false,
+ // autoplay:true,
+  autoplaySpeed:1500,
+ infinite: true,
+slidesToShow:1,
+  //slidesToScroll:2,
 
+});
+
+var mixer = mixitup(".grid-container", {
+  animation: {
+    animateResizeTargets: true,
+    duration: 550,
+    nudge: true,
+    reverseOut: false,
+    effects: "fade scale(0.01) translateZ(-100px)"
+  }
+});
 
 
 

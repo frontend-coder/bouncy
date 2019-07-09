@@ -103,6 +103,9 @@ gulp.task('scripts', done => {
 'app/libs/plagins/magnific-popup/jquery.magnific-popup.min.js',
 // 'app/libs/plagins/owlcarousel/owl.carousel.min.js',
 'app/libs/plagins/slick/slick.min.js',
+'app/libs/plagins/mixitup/mixitup.min.js',
+
+
 'app/libs/common.js'
 // Always at the end
 ];
