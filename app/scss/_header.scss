@@ -19,10 +19,10 @@
 
 }
 .top_line {
-width: 100%;
-position: fixed;
-position: absolute;
-top:0;
+	width: 100%;
+	position: fixed;
+	position: absolute;
+	top:0;
 }
 
 .top_line_box {
@@ -55,6 +55,7 @@ top:0;
 	width: 53%;
 	margin: auto;
 }
+
 .header_content_title {
 	@include fontsize-lineheight(70, 35);
 	color: #ffffff;
@@ -71,37 +72,17 @@ top:0;
 	letter-spacing: .8px;
 }
 
-
-
 .header_bottom_buton {
 	width: 36px;
 	height: 36px;
-line-height: 36px;
+	line-height: 36px;
 	background-color: $body_aksentcolor;
 	border-radius: 50%;
 	position: absolute;
 	bottom:70px;
 	left:50%;
 	margin-left: -1px *(36 / 2);
-  @include font-size(30px);
-  color:#fff;
-  text-align: center;
-
+	@include font-size(30px);
+	color:#fff;
+	text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
