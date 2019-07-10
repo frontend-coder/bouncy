@@ -761,3 +761,150 @@ grid-row:span 3;
 .grid-items:nth-child(12) {
  //    grid-area:z;
 }
+
+
+
+
+
+
+
+
+.latest_post_fon {
+background:#fff url(../img/latest-blog.jpg) center center no-repeat;
+	background-size: cover;
+//	min-height: 735px;
+	position: relative;
+	padding: 75px 0 95px 0;
+
+}
+.latest_post_fon:before {
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	content: '';
+	position: absolute;
+	background-color: rgba(#000, .95);
+
+}
+
+.posts_slider_fon {
+position: relative;
+width: 55%;
+}
+
+.posts_slider_title {
+@include fontsize-lineheight(30, 20);
+color: #e1e4e9;
+font-weight: 400;
+letter-spacing: 0.8px;
+margin-bottom: 15px;
+}
+
+.posts_slider_autor {
+
+font-family: "SourceSansProLight", sans-serif;
+@include fontsize-lineheight(25, 14);
+font-weight: 300;
+font-style: italic;
+text-transform: uppercase;
+color: $body_color_text;
+letter-spacing: 1.4px;
+margin-bottom: 20px;
+}
+
+.posts_slider_autor span {
+color: #19bd9a;
+	}
+
+	.posts_slider_socials {
+display: flex;
+list-style: none;
+margin-bottom: 60px;
+	}
+.posts_slider_socials li {
+@include fontsize-lineheight(25, 14);
+padding: 3px 10px;
+color: #464646;
+font-family: "SourceSansProLight", sans-serif;
+font-weight: 300;
+letter-spacing: 1.4px;
+}
+.posts_slider_text {
+@include fontsize-lineheight(25, 14);
+color: #81868e;
+font-weight: 400;
+letter-spacing: 0.7px;
+margin-bottom: 50px;
+}
+
+.posts_slider_link {
+	padding-left: 15px;
+display: inline-block;
+	@include fontsize-lineheight(12, 16);
+color: #b2b3b3;
+font-weight: 400;
+text-decoration: none;
+text-transform: capitalize;
+position: relative;
+}
+.posts_slider_link:before {
+position: absolute;
+content: "+";
+color: #b2b3b3;
+top:0;
+left:2px;
+
+}
+
+#posts_slider .slick-dots {
+top:50%;
+transform:translateY(-50%);
+// left:0;
+display: flex;
+flex-direction: column;
+//justify-content: center;
+align-items:  flex-end;
+justify-content: flex-start;
+}
+
+#posts_slider .slick-dots li {
+display: inline-block;
+}
+#posts_slider .slick-dots li button {
+ border: 1px solid #fff;
+}
+
+#posts_slider .slick-dots .slick-active button {
+ border: 1px solid #ffffff;
+ background-color: #ffffff;
+}
+
+.container-fluid{
+ 	position: relative;
+ 	text-align: left;
+ 	padding-left: 90px;
+}
+
+  .container-fluid .block_content,
+ .container-fluid .block_title {
+color:#fff;
+text-align: left;
+}
+.container-fluid .block_title {
+margin-bottom: 34px;
+}
+
+.container-fluid .block_content {
+ 	 	margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
