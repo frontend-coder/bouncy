@@ -5202,6 +5202,288 @@ body input:required:valid, body textarea:required:valid {
   margin-bottom: 100px;
 }
 
+.price_fon {
+  background-color: #f3f3f3;
+}
+
+.price_box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.price_fon .block_content {
+  margin-bottom: 60px;
+}
+
+.price_box_item {
+  width: 25%;
+  -webkit-transition: all 10.2s ease;
+  -o-transition: all 10.2s ease;
+  transition: all 10.2s ease;
+}
+
+.price_box_wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 331px;
+  background-color: #fff;
+}
+
+.price_box_name {
+  line-height: 1.2;
+  font-size: 1.25rem;
+  background-color: #19bd9a;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 24px 0;
+  text-align: center;
+}
+
+.price_box_link {
+  line-height: 0.75;
+  font-size: 1rem;
+  display: block;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #ffffff;
+  font-weight: 400;
+  background-color: #19bd9a;
+  padding: 30px 0;
+  text-align: center;
+  display: none;
+  -webkit-transition: display 10.2s ease;
+  -o-transition: display 10.2s ease;
+  transition: display 10.2s ease;
+}
+
+.price_box_link:hover {
+  text-decoration: underline;
+}
+
+.price_box_number {
+  line-height: 1.14286;
+  font-size: 2.625rem;
+  text-align: center;
+  color: #1fbba6;
+  font-family: "SourceSansProLight", sans-serif;
+  font-size: 42px;
+  font-weight: 800;
+}
+
+.price_box_number span {
+  display: block;
+  color: #81868e;
+  line-height: 1.4;
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.price_box_terms {
+  list-style: none;
+  color: #81868e;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.7px;
+  padding-left: 33px;
+  padding-right: 33px;
+  display: none;
+}
+
+.price_box_item:hover .price_box_terms,
+.price_box_item:hover .price_box_link {
+  display: block;
+  -webkit-transition: display 10.2s ease;
+  -o-transition: display 10.2s ease;
+  transition: display 10.2s ease;
+}
+
+.price_box_item:hover .price_box_name,
+.price_box_item:hover .price_box_number,
+.price_box_wrapper:hover .price_box_name,
+.price_box_wrapper:hover .price_box_number {
+  display: none;
+  -webkit-transition: display 10.2s ease;
+  -o-transition: display 10.2s ease;
+  transition: display 10.2s ease;
+}
+
+.price_box_item,
+.price_box_wrapper {
+  -webkit-transition: display 10.2s ease;
+  -o-transition: display 10.2s ease;
+  transition: display 10.2s ease;
+}
+
+.price_box_name,
+.price_box_number,
+.price_box_name,
+.price_box_number,
+.price_box_terms,
+.price_box_link {
+  -webkit-transition: display 10.2s ease;
+  -o-transition: display 10.2s ease;
+  transition: display 10.2s ease;
+}
+
+.subsribe_fon {
+  padding: 75px 0 95px 0;
+  background: #fff url(../img/subsribe.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  position: relative;
+}
+
+.subsribe_fon:before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.subsribe_form {
+  width: 52%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.subsribe_input {
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #fff;
+  width: 68%;
+  text-indent: 10px;
+  color: #cfd3d4;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.14px;
+}
+
+.subsribe_button {
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #19bd9a;
+  background-color: #19bd9a;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.14px;
+  width: 30%;
+}
+
+.subsribe_fon .block_content,
+.subsribe_fon .block_title {
+  position: relative;
+  color: #fff;
+}
+
+.subsribe_fon .block_content {
+  margin-bottom: 60px;
+}
+
+.contact_wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact_item {
+  width: 25%;
+}
+
+.contact_item_pic {
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  min-height: 140px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact_item_icon {
+  width: 42px;
+  height: 50px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.contact_item_info {
+  background-color: #fff;
+  padding: 25px 0;
+  text-align: center;
+}
+
+.contact_info_title {
+  color: #464646;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.64px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contact_item_list {
+  list-style: none;
+  line-height: 1.42857;
+  font-size: 0.875rem;
+  color: #81868e;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+
 .heagerclass {
   font-size: 2rem;
 }

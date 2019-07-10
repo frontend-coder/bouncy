@@ -899,12 +899,221 @@ margin-bottom: 34px;
  	 	margin-bottom: 100px;
 }
 
+.price_fon {
+background-color: #f3f3f3;
+}
+.price_box {
+display: flex;
+justify-content: space-between;
+}
+.price_fon .block_content {
+	margin-bottom: 60px;
+}
+.price_box_item {
+width: 25%;
+@include transition(all, 10.2s, ease);
+}
+
+.price_box_wrapper {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 331px;
+background-color: #fff;
+}
 
 
+.price_box_name {
+@include fontsize-lineheight(24, 20);
+background-color: $body_aksentcolor;
+color: #ffffff;
+font-size: 20px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 0.8px;
+padding:24px 0;
+text-align: center;
+}
+.price_box_link {
+	@include fontsize-lineheight(12, 16);
+	display: block;
+text-decoration: none;
+text-transform: capitalize;
+color: #ffffff;
+font-weight: 400;
+background-color: $body_aksentcolor;
+padding:30px 0;
+text-align: center;
+display: none;
+@include transition(display, 10.2s, ease);
+}
+.price_box_link:hover {
+text-decoration: underline;
+}
+.price_box_number {
+	@include fontsize-lineheight(48, 42);
+text-align: center;
+color: #1fbba6;
+font-family: "SourceSansProLight", sans-serif;
+font-size: 42px;
+font-weight: 800;
+}
+
+.price_box_number span {
+display: block;
+color: #81868e;
+@include fontsize-lineheight(28, 20);
+font-weight: 400;
+letter-spacing: 1px;
+}
+
+.price_box_terms {
+	list-style: none;
+color: #81868e;
+font-size: 14px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0.7px;
+padding-left: 33px;
+padding-right: 33px;
+display: none;
+}
+.price_box_item:hover .price_box_terms,
+.price_box_item:hover .price_box_link {
+display: block;
+@include transition(display, 10.2s, ease);
+}
+.price_box_item:hover .price_box_name,
+.price_box_item:hover .price_box_number,
+.price_box_wrapper:hover .price_box_name,
+.price_box_wrapper:hover .price_box_number {
+display: none;
+@include transition(display, 10.2s, ease);
+}
+.price_box_item,
+.price_box_wrapper {
+	@include transition(display, 10.2s, ease);
+
+}
+.price_box_name,
+.price_box_number,
+.price_box_name,
+ .price_box_number,
+.price_box_terms,
+.price_box_link {
+@include transition(display, 10.2s, ease);
+
+}
 
 
+.subsribe_fon {
+padding: 75px 0 95px 0;
+	background:#fff url(../img/subsribe.jpg) center center no-repeat;
+	background-size: cover;
+	position: relative;
+}
 
+.subsribe_fon:before {
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	content: '';
+	position: absolute;
+	background-color: rgba(#000, .80);
 
+}
 
+.subsribe_form {
+	width: 52%;
+	margin:0 auto;
+	display: flex;
+	position: relative;
+justify-content: space-between;
+}
 
+.subsribe_input {
+height: 40px;
+line-height: 40px;
+border:1px solid #fff;
+width: 68%;
+text-indent: 10px;
+color: #cfd3d4;
+font-size: 14px;
+font-weight: 400;
+letter-spacing: 0.14px;
+}
 
+.subsribe_button {
+height: 40px;
+line-height: 40px;
+border:1px solid $body_aksentcolor;
+background-color: $body_aksentcolor;
+color: #ffffff;
+font-size: 14px;
+font-weight: 400;
+letter-spacing: 0.14px;
+width: 30%;
+}
+.subsribe_fon .block_content,
+.subsribe_fon .block_title {
+	position: relative;
+	color:#fff;
+}
+
+.subsribe_fon .block_content {
+	margin-bottom: 60px;
+}
+
+.contact_wrap {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contact_item {
+width: 25%;
+}
+
+.contact_item_pic {
+background-position: center center;
+background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 140px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}
+
+.contact_item_icon {
+width: 42px;
+height: 50px;
+background-position: center center;
+background-repeat: no-repeat;
+}
+.contact_item_info {
+	background-color: #fff;
+	padding: 25px 0;
+	text-align: center;
+}
+
+.contact_info_title {
+color: #464646;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+text-transform: uppercase;
+letter-spacing: 0.64px;
+text-align: center;
+margin-bottom: 10px;
+}
+
+.contact_item_list {
+	list-style: none;
+	 @include fontsize-lineheight(20, 14);
+color: #81868e;
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+text-transform: uppercase;
+letter-spacing: 0.7px;}
