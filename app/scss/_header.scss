@@ -1,12 +1,10 @@
-
 .header_fon {
 	background-size: cover;
 	min-height: 735px;
 	position: relative;
 	display: flex;
 	background-position: center center;
-background-repeat: no-repeat;
-
+	background-repeat: no-repeat;
 }
 
 .header_fon:before {
@@ -17,23 +15,23 @@ background-repeat: no-repeat;
 	content: '';
 	position: absolute;
 	background-color: rgba(#000, .50);
-
 }
+
 .top_line {
 	width: 100%;
 	// position: fixed;
 	position: absolute;
 	left:0;
 	top:0;
-	 @include transition(all, 0.72s, ease);
-}
-.top_line_active {
-background-color: #000;
-	position: fixed;
-z-index: 100;
- @include transition(all, 0.72s, ease);
+	@include transition(all, 0.72s, ease);
 }
 
+.top_line_active {
+	background-color: #000;
+	position: fixed;
+	z-index: 100;
+	@include transition(all, 0.72s, ease);
+}
 
 .top_line_box {
 	padding: 47px 0;
@@ -42,26 +40,31 @@ z-index: 100;
 	align-items: center;
 	justify-content: space-between;
 }
+
 .top_line_box_active {
-		padding: 27px 0;
+	padding: 27px 0;
 }
+
 .top_menu ul {
 	display: flex;
 	list-style: none;
 }
+
 .top_menu ul li a {
 	padding: 5px 20px;
 	color:#fff;
 	line-height: 0.75;
 	text-decoration: none;
-	@include transition(all, 0.2s, ease);
+	@include transition(all, 0.52s, ease);
 	border: 1px solid transparent;
 }
-	a.mPS2id-highlight,
+
+a.mPS2id-highlight,
 .top_menu ul li a:hover {
 	border: 1px solid #fff;
 	border-radius: 20px;
 }
+
 .header_content {
 	text-align: center;
 	position: relative;
@@ -88,14 +91,22 @@ z-index: 100;
 .header_bottom_buton {
 	width: 36px;
 	height: 36px;
+	padding: 0;
+	text-decoration: none;
 	line-height: 36px;
+	color: #fffb;
 	background-color: $body_aksentcolor;
 	border-radius: 50%;
 	position: absolute;
 	bottom:70px;
 	left:50%;
 	margin-left: -1px *(36 / 2);
-	@include font-size(30px);
-	color:#fff;
-	text-align: center;
+	@include font-size(45px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	@include transition(all, 0.52s, ease);
+}
+.header_bottom_buton {
+	background-color:darken($body_aksentcolor, 10%);
 }

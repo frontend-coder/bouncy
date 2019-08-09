@@ -9,12 +9,9 @@
 		font-display: fallback;
 }
 
-
-
-
 @font-face {
 	font-family: "BigJohn";
-	src: url("../fonts/BigJohn/RobotoCondensedBold.eot?#iefix")format("embedded-opentype"),
+	src: url("../fonts/BigJohn/BigJohn.eot?#iefix")format("embedded-opentype"),
 		url("../fonts/BigJohn/BigJohn.woff") format("woff"),
 		url("../fonts/BigJohn/BigJohn.woff2") format("woff2"),
 		url("../fonts/BigJohn/BigJohn.ttf") format("truetype");
@@ -22,9 +19,6 @@
 	font-weight: 700;
 	font-display: swap;
 }
-
-
-
 
 @font-face {
 	font-family: "SourceSansProLight";

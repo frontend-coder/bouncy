@@ -24,7 +24,7 @@ $(document).ready(function () {
 
 
      const checkStickyMenu = function() {
-         if ($(window).scrollTop() > $("#about").offset().top){
+         if ($(window).scrollTop() > $("#header_bottom_buton").offset().top){
               $(".top_line").addClass("top_line_active");
               $(".top_line_box").addClass("top_line_box_active");
          }
@@ -49,7 +49,7 @@ $(document).ready(function () {
 
 
     /* Page Scroll to id fn call */
-    $(".top_menu ul li a").mPageScroll2id({
+    $("#header_bottom_buton, .top_menu ul li a").mPageScroll2id({
         layout: "auto",
         offset: ".top_line",
         autoScrollSpeed: true,
@@ -76,22 +76,6 @@ $(document).ready(function () {
   $(item).find(tooltip).show(animationLength);
 });
  }
-
-
-
-//   $(window).scroll(function () {
-//     let animate = true;
-//     if($('.team_fon').offset().top <= $(window).scrollTop() + 350) {
-//       if(animate) {
-//         moveProgressBar('.progree_element', '.progree_line', '.progree_tooltip');
-//       }
-//       animate = false;
-//     }
-//   });
-
-
-// конец кода
-
 
 
 const tabLinks = document.querySelectorAll(".tabs a");
