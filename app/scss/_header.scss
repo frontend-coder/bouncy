@@ -1,10 +1,11 @@
 
 .header_fon {
-	background:#fff url(../img/header-fon.jpg) center center no-repeat;
 	background-size: cover;
 	min-height: 735px;
 	position: relative;
 	display: flex;
+	background-position: center center;
+background-repeat: no-repeat;
 
 }
 
@@ -20,10 +21,19 @@
 }
 .top_line {
 	width: 100%;
-	position: fixed;
+	// position: fixed;
 	position: absolute;
+	left:0;
 	top:0;
+	 @include transition(all, 0.72s, ease);
 }
+.top_line_active {
+background-color: #000;
+	position: fixed;
+z-index: 100;
+ @include transition(all, 0.72s, ease);
+}
+
 
 .top_line_box {
 	padding: 47px 0;
@@ -32,7 +42,9 @@
 	align-items: center;
 	justify-content: space-between;
 }
-
+.top_line_box_active {
+		padding: 27px 0;
+}
 .top_menu ul {
 	display: flex;
 	list-style: none;
@@ -45,6 +57,7 @@
 	@include transition(all, 0.2s, ease);
 	border: 1px solid transparent;
 }
+	a.mPS2id-highlight,
 .top_menu ul li a:hover {
 	border: 1px solid #fff;
 	border-radius: 20px;

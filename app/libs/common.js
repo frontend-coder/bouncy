@@ -21,6 +21,52 @@ $(document).ready(function () {
 
 
 
+
+
+     const checkStickyMenu = function() {
+         if ($(window).scrollTop() > $("#about").offset().top){
+              $(".top_line").addClass("top_line_active");
+              $(".top_line_box").addClass("top_line_box_active");
+         }
+         else {
+                 $(".top_line").removeClass("top_line_active");
+                 $(".top_line_box").remove("top_line_box_active");
+         }
+     }
+ $(window).on("scroll", function() {
+        checkStickyMenu();
+ })
+
+
+//    $(window).on("scroll", function() {
+//       checkStickyMenu('slow');
+// console.log("scroll " + "win scroll: " + $(window).scrollTop() + " secnav: " + parseInt($(".top_line_menu").offset().top));
+//   })
+//   checkStickyMenu();
+
+
+
+
+
+    /* Page Scroll to id fn call */
+    $(".top_menu ul li a").mPageScroll2id({
+        layout: "auto",
+        offset: ".top_line",
+        autoScrollSpeed: true,
+        scrollSpeed: 1000,
+        highlightSelector: ".top_menu ul li a"
+    });
+
+    /* demo functions */
+    $("a[rel='next']").click(function(e) {
+        e.preventDefault();
+        var to = $(this).parent().parent("section").next().attr("id");
+        $.mPageScroll2id("scrollTo", to);
+    });
+
+
+
+
  function moveProgressBar(node, nodeLine, tooltip, animationLength = 1500) {
  const progressElement = $(node);
  progressElement.each(function (value, item) {
