@@ -28,7 +28,7 @@ color: $body_color_text;
 html{
 width: 100%;
 /* height: 100%; */
-font-size: $body_fontsize;
+font-size: ($body_fontsize *1px);
 line-height: $body_lineheight;
 margin:0;
 padding:0;

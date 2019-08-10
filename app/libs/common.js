@@ -237,15 +237,7 @@ verticalSwiping: false,
 //  cssEase: 'linear',
 });
 
-
-
-
-
-
-
-
-
-var mixer = mixitup(".grid-container", {
+var mixer = mixitup(".grid__wrapper_three", {
   animation: {
     animateResizeTargets: true,
     duration: 550,
@@ -275,13 +267,6 @@ var mixer = mixitup(".grid-container", {
 		return false;
 	});
 	//castom code
-
-
-
-
-
-
-
 
 
 });
