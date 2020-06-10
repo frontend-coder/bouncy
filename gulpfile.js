@@ -51,14 +51,14 @@ gulp.task('styles', () => {
 
 gulp.task('scripts', done => {
 	var jsFiles = [
-'app/libs/plagins/jquery/jquery.min.js',
-'app/libs/plagins/jquery.PageScroll2id/jquery.PageScroll2id.min.js',
-'app/libs/plagins/magnific-popup/jquery.magnific-popup.min.js',
-'app/libs/plagins/mixitup-3/dist/mixitup.min.js',
-'app/libs/plagins/slick/slick.min.js',
-'app/libs/common.js'
-// Always at the end
-];
+    'app/libs/plagins/jquery.min.js',
+    'app/libs/plagins/jquery.PageScroll2id/js/minified/jquery.PageScroll2id.min.js',
+    'app/libs/plagins/magnific-popup/jquery.magnific-popup.min.js',
+    'app/libs/plagins/mixitup-3/dist/mixitup.min.js',
+    'app/libs/plagins/slick/slick.min.js',
+    'app/libs/common.js',
+    // Always at the end
+  ];
 return gulp.src(jsFiles)
 .pipe(concat('scripts.min.js'))
 //	.pipe(uglify()) // Mifify js (opt.)
