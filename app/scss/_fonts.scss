@@ -1,43 +1,39 @@
 /* font-family: "OpenSansRegular"; */
 @font-face {
-	font-family: "OpenSansRegular";
-	src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
-		url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"),
-		url("../fonts/OpenSansRegular/OpenSansRegular.woff2") format("woff2"),
-		url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-	font-display: fallback;
+  src:
+    url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"),
+    url("../fonts/OpenSansRegular/OpenSansRegular.woff2") format("woff2"),
+    url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+  font-family: "OpenSansRegular";
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
 }
 
 @font-face {
-	font-family: "BigJohn";
-	src: url("../fonts/BigJohn/BigJohn.eot?#iefix")format("embedded-opentype"),
-		url("../fonts/BigJohn/BigJohn.woff") format("woff"),
-		url("../fonts/BigJohn/BigJohn.woff2") format("woff2"),
-		url("../fonts/BigJohn/BigJohn.ttf") format("truetype");
-	font-style: normal;
-	font-weight: 700;
-	font-display: swap;
+  src:
+    url("../fonts/BigJohn/BigJohn.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/BigJohn/BigJohn.woff") format("woff"),
+    url("../fonts/BigJohn/BigJohn.woff2") format("woff2"),
+    url("../fonts/BigJohn/BigJohn.ttf") format("truetype");
+  font-family: "BigJohn";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-	font-family: "SourceSansProLight";
-	src: url("../fonts/SourceSansProLight/SourceSansPro-Light.eot?#iefix")format("embedded-opentype"),
-		url("../fonts/SourceSansProLight/SourceSansPro-Light.woff") format("woff"),
-		url("../fonts/SourceSansProLight/SourceSansPro-Light.woff2") format("woff2"),
-		url("../fonts/SourceSansProLight/SourceSansPro-Light.ttf") format("truetype");
-	font-style: normal;
-	font-weight: 200;
-	font-display: fallback;
+  src:
+    url("../fonts/SourceSansProLight/SourceSansPro-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/SourceSansProLight/SourceSansPro-Light.woff") format("woff"),
+    url("../fonts/SourceSansProLight/SourceSansPro-Light.woff2") format("woff2"),
+    url("../fonts/SourceSansProLight/SourceSansPro-Light.ttf") format("truetype");
+  font-family: "SourceSansProLight";
+  font-weight: 200;
+  font-style: normal;
+  font-display: fallback;
 }
-
-
-
-
-
-
-
 
 // 100 Extra Light or Ultra Light
 // 200 Light or Thin
@@ -48,20 +44,3 @@
 // 700 Bold
 // 800 Black, Extra Bold or Heavy
 // 900 Extra Black, Fat, Poster or Ultra Black
-
-
-
-// 100 — тонкое начертание;
-// 200 — сверхсветлое;
-// 300 — светлое;
-// 400 — нормальное (аналогично normal);
-// 500 — среднее;
-// 600 — полужирное;
-// 700 — жирное (аналогично bold);
-// 800 — сверхжирное;
-// 900 — тяжёлое.
-// https://webfonts.pro/
-
-
-
-// @include font-face("Roboto", "../fonts/roboto/roboto-bold-italic", 700, italic, "maximum" );

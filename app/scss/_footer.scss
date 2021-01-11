@@ -1,91 +1,123 @@
 .footer_wrap {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .footer_content {
-	text-align: center;
+  text-align: center;
 }
 
 .footer_logo {
-	color: #323a45;
-	font-family: "BigJohn", sans-serif;
-	@include fontsize-lineheight(12, 25);
-	text-transform: uppercase;
-	margin-bottom: 20px;
+  @include fontsize-lineheight(12, 25);
+
+  margin-bottom: 20px;
+  font-family: "BigJohn", sans-serif;
+  text-transform: uppercase;
+  color: #323a45;
 }
 
 .footer_copy {
-	margin-bottom: 40px;
-	@include fontsize-lineheight(25, 14);
+  @include fontsize-lineheight(25, 14);
+
+  margin-bottom: 40px;
 }
 
 .footer_social li {
-	list-style-type: none;
-	display: inline-block;
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 10px;
 }
 
-.footer_social li {
-	margin-right: 10px;
+.footer_social a .footer_social_svg g path {
+  @include transition(all, 0.72s, ease);
+
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+.footer_social a:hover .footer_social_svg g path {
+  fill: darken(#ffffff, 10%);
+}
+
+.footer_social li a svg path {
+  @include transition(all, 0.72s, ease);
+
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+.footer_social li a:hover svg path {
+  fill: darken(#ffffff, 10%);
 }
 
 .footer_social li a {
-	@include font-size(14px);
-	line-height: 1.7875rem;
-	width: 1.7875rem;
-	height: 1.7875rem;
-	display: inline-block;
-	border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 5px;
+  width: 26px;
+  height: 26px;
 
-	color: #fff;
-	text-decoration: none;
+  // width: 1.7875rem;
+  // height: 1.7875rem;
+  // line-height: 1.7875rem;
+  text-decoration: none;
+  color: #ffffff;
 }
+
+// .footer_social li a img.footer_social_svg path {
+//   vimeo-logo
+// }
 
 .footer_social li a.facebook {
-	background-color: #3b5998;
-}
+  @include transition(all, 0.72s, ease);
 
+  background-color: #3b5998;
+}
 
 .footer_social li a.facebook:hover {
-	background-color: darken(#3b5998, 30%);
+  background-color: darken(#3b5998, 30%);
 }
 
-
 .footer_social li a.twitter {
-	background-color: #26a6d1;
+  @include transition(all, 0.72s, ease);
+
+  background-color: #26a6d1;
 }
 
 .footer_social li a.twitter:hover {
-	background-color: darken(#26a6d1, 30%);
+  background-color: darken(#26a6d1, 30%);
 }
 
 .footer_social li a.linkedin {
-	background-color: #0e76a8;
+  @include transition(all, 0.72s, ease);
+
+  background-color: #0e76a8;
 }
 
 .footer_social li a.linkedin:hover {
-	background-color: darken(#0e76a8, 30%);
+  background-color: darken(#0e76a8, 30%);
 }
 
-
 .footer_social li a.instagram {
-	background-color: #3f729b;
+  @include transition(all, 0.72s, ease);
+
+  background-color: #3f729b;
 }
 
 .footer_social li a.instagram:hover {
-	background-color: darken(#3f729b, 30%);
+  background-color: darken(#3f729b, 30%);
 }
 
-
-
 .footer_social li a.vimeo {
-	background-color: #86c9ef;
+  @include transition(all, 0.72s, ease);
+
+  background-color: #86c9ef;
 }
 
 .footer_social li a.vimeo:hover {
-	background-color: darken(#86c9ef, 30%);
+  background-color: darken(#86c9ef, 30%);
 }
