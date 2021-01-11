@@ -8,5 +8,25 @@
 				"label": ""
 			}
 		]
+	},
+	{
+		"path": "$ROOTPATH$\\app\\scss\\_category.scss",
+		"bookmarks": [
+			{
+				"line": 29,
+				"column": 0,
+				"label": ""
+			},
+			{
+				"line": 136,
+				"column": 0,
+				"label": ""
+			},
+			{
+				"line": 327,
+				"column": 2,
+				"label": ""
+			}
+		]
 	}
 ]

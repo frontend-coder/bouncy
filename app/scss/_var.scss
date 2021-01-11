@@ -2,20 +2,17 @@
 
 $body_fontsize: 16;
 $body_lineheight: 1.75;
-
-$portfolio_fon : #f3f3f3;
-
+$portfolio_fon: #f3f3f3;
 $placeholdercolortext: #202020;
-$white_color: #fff;
-$default-font: "Poppins-Regular",
-sans-serif;
-$body_color_text:#000;
-$accent_color:#010101;
+$white_color: #ffffff;
+$default-font:
+  sans-serif"Poppins-Regular",
+  sans-serif;
+$body_color_text: #000000;
+$accent_color: #010101;
 $body_aksentcolor: #010101;
-$botom_color:#202020;
-
-
-
+$botom_color: #202020;
+$color_blues: #26a6d1;
 
 //миксины которыые возможно использовать во время версткиbys
 
@@ -23,19 +20,21 @@ $botom_color:#202020;
 //                       название      стиль    font-weght, база, размер шрифта
 
 @mixin font-face($name, $sanserif, $weight: null, $linebase: null, $fontsize:null) {
+  $rsize: $fontsize / 16;
+
   font-family: quote($name), $sanserif;
   font-weight: $weight;
-  line-height: ($linebase / $fontsize);
-  $rsize: $fontsize / 16;
   font-size: $rsize * 1rem;
+  line-height: ($linebase / $fontsize);
 }
 
 // @include fontsize-lineheight(24, 16); расчет сразу и font-size и line-height
 
 @mixin fontsize-lineheight($lineheight, $fsize) {
-  line-height: $lineheight / $fsize;
   $rembase: $fsize / 16;
+
   font-size: $rembase * 1rem;
+  line-height: $lineheight / $fsize;
 }
 
 // @include lineheight(24, 16);  база для расчета и шрифт line-height
@@ -48,20 +47,19 @@ $botom_color:#202020;
 
 @function calculateRem($size) {
   $remSize: $size / 16px;
+
   @return $remSize * 1rem;
 }
 
 @mixin font-size($size) {
-  font-size: calculateRem($size);
+  font-size: calculaterem($size);
 }
-
-
 
 // @include padzero;
 
 @mixin padzero {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 // @include trans;

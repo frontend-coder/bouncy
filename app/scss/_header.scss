@@ -17,6 +17,12 @@
   background-color: rgba(#000000, 0.5);
 }
 
+.header_fon_page {
+  position: relative;
+  margin-bottom: 30px;
+  background-color: #000000;
+}
+
 .top_line {
   @include transition(all, 0.72s, ease);
 
@@ -94,7 +100,6 @@ a.mPS2id-highlight,
 }
 
 .header_bottom_buton {
-  @include font-size(45px);
   @include transition(all, 0.52s, ease);
 
   position: absolute;
@@ -108,6 +113,7 @@ a.mPS2id-highlight,
   padding: 0;
   width: 36px;
   height: 36px;
+  font-size: 45px;
   line-height: 36px;
   text-decoration: none;
   color: #ffffffbb;

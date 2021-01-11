@@ -75,12 +75,12 @@ $(document).ready(() => {
     });
   });
   /* Page Scroll to id fn call */
-  $("#header_bottom_buton, .top_menu ul li a").mPageScroll2id({
-    layout: "auto",
-    offset: ".top_line",
+  $('.header_bottom_buton, .top_menu ul li a').mPageScroll2id({
+    layout: 'auto',
+    offset: '.top_line',
     autoScrollSpeed: true,
     scrollSpeed: 1000,
-    highlightSelector: ".top_menu ul li a",
+    highlightSelector: '.top_menu ul li a',
   });
 
   /* demo functions */
