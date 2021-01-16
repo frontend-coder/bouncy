@@ -222,7 +222,6 @@
   grid-template-columns: 2fr 1fr 1fr;
   margin: 0;
   padding: 0;
-  grid-template-row: 1fr;
 }
 
 .futured_box_overlay {
@@ -360,6 +359,7 @@
   flex-basis: 50%;
   align-items: center;
   justify-content: space-between;
+  text-align: center;
 }
 
 .services_wrap_prof svg {
@@ -1234,6 +1234,7 @@
 }
 
 .contact_form_label {
+  position: relative;
   width: 30%;
 }
 
@@ -1252,6 +1253,7 @@
 .contact_form_textarea {
   margin-bottom: 30px;
   border: 1px solid #d8dce0;
+  padding: 10px;
   width: 100%;
   min-height: 190px;
   color: #a9a9a9;
@@ -1283,6 +1285,7 @@
 }
 
 .checkbox_box {
+  position: relative;
   margin: 10px auto;
   padding: 0;
   width: 100%;
@@ -1308,6 +1311,12 @@
   font-weight: 400;
   font-size: 13px;
   color: #a9a9a9;
+}
+
+.js-validate-error-label {
+  position: absolute;
+  left: 5%;
+  top: 55%;
 }
 
 .ans-radio:hover {
