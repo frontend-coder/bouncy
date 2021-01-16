@@ -647,14 +647,14 @@ body input:focus:required:invalid,body textarea:focus:required:invalid{border-co
 .search-field{margin:0;border:1px solid #26a6d1;padding:0;width:84%;height:50px;line-height:50px;text-indent:10px}
 .search-submit{margin:0;border:1px solid #26a6d1;padding:0;width:50px;height:50px;line-height:50px;color:#fff;background-color:#26a6d1}
 .widget ul{list-style:none;margin:30px auto;width:90%}
-.widget ul li{margin-bottom:5px}
+.widget ul li{position:relative;margin-bottom:5px}
 .widget ul li:last-child{margin-bottom:0}
 .widget ul li a{transition:.2s;position:relative;padding-left:15px;font-size:1rem;line-height:1.75;text-decoration:none;color:#505050}
 .widget ul li a:hover{text-decoration:underline}
-.widget ul li a::before{content:"\e641";position:absolute;left:-5px;top:-3px;font-family:Pe-icon-7-stroke;font-size:1.2rem}
 .widget_resentpost .rpt_title::before{display:none}
 .widget_last_post ul li{position:relative;padding-left:15px}
-.widget_last_post ul li::before{content:"\e641";position:absolute;left:-5px;top:-3px;font-family:Pe-icon-7-stroke;font-size:1.2rem}
+.widget_archive ul li{position:relative}
+.widget_archive ul li::before,.widget_last_post ul li::before{content:"\e641";position:absolute;left:-5px;top:-3px;font-family:Pe-icon-7-stroke;font-size:1.2rem}
 .search_rezzult{margin:30px 0;font-size:1rem}
 blockquote{position:relative;margin-bottom:5px;border-left:5px solid #26a6d1;padding-left:20px;font-style:italic;font-size:16px;line-height:1.8;color:#505050}
 .pagesearch_title{margin-bottom:25px;font-size:1.5625rem;line-height:1;text-align:center;text-transform:uppercase}
@@ -690,7 +690,7 @@ blockquote{position:relative;margin-bottom:5px;border-left:5px solid #26a6d1;pad
 .reply a:hover{border-bottom:1px solid;text-decoration:none;color:#13293e}
 .note{margin:10px 0}
 #respond{margin:5px 0;border:1px solid #26a6d1;background:#fff}
-#postcomment{margin:10px;padding:10px 20px 10px 0;font-size:1.3rem;text-align:right;color:#555;background:#26a6d1}
+#postcomment{margin:10px;padding:10px 20px 10px 0;font-size:1.3rem;text-align:right;color:#fff;background:#26a6d1}
 form#commentform,p.logged-in{margin:30px;font-size:1.2rem}
 .bloged-in a,form#commentform,p.logged-in a{color:#000;transition:.2s}
 .bloged-in a:hover,form#commentform,p.logged-in a:hover{color:#555}

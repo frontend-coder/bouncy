@@ -298,6 +298,7 @@
 }
 
 .widget ul li {
+  position: relative;
   margin-bottom: 5px;
 }
 
@@ -320,14 +321,14 @@
   text-decoration: underline;
 }
 
-.widget ul li a::before {
-  content: "\e641";
-  position: absolute;
-  left: -5px;
-  top: -3px;
-  font-family: "Pe-icon-7-stroke";
-  font-size: 1.2rem;
-}
+// .widget ul li a::before {
+//   content: "\e641";
+//   position: absolute;
+//   left: -5px;
+//   top: -3px;
+//   font-family: "Pe-icon-7-stroke";
+//   font-size: 1.2rem;
+// }
 
 .widget_resentpost .rpt_title::before {
   display: none;
@@ -343,6 +344,11 @@
   padding-left: 15px;
 }
 
+.widget_archive ul li {
+  position: relative;
+}
+
+.widget_archive ul li::before,
 .widget_last_post ul li::before {
   content: "\e641";
   position: absolute;
@@ -587,7 +593,7 @@ blockquote {
   padding: 10px 20px 10px 0;
   font-size: 1.3rem;
   text-align: right;
-  color: #555555;
+  color: #ffffff;
   background: $color_blues;
 }
 
